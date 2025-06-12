@@ -35,8 +35,8 @@ nvcc --std=c++11 acf_gpu.cu -o acf_gpu -arch=sm_75
 ```
 | Dataset                 | CPU Time (seconds) | GPU Time (seconds) | Speedup (CPU / GPU)   |
 | ----------------------- | ------------------ | ------------------ | --------------------- |
-| `small_data.txt`        | 0.0000069          | 0.00026811         | GPU slightly slower\* |
-| `data_100k_degrees.txt` | 1183.32            | 6.89996            | \~171x faster on GPU  |
+| `small_data.txt`        | 0.0000069          | 0.00026811         | GPU slightly slower   |
+| `data_100k_degrees.txt` | 1183.32            | 6.89996            | 171x faster on GPU    |
 
 ## Explanation of Results
 
