@@ -23,8 +23,8 @@ To address this, the project uses GPU acceleration with CUDA to significantly sp
 ### CPU Version (Windows)
 ```bash
 g++ acf_cpu.cpp -o acf_cpu
-./acf_cpu small_data.txt
-./acf_cpu data_100k_degrees.txt
+acf_cpu small_data.txt
+acf_cpu data_100k_degrees.txt
 ```
 
 ### GPU Version (Google Colab or Linux with CUDA)
@@ -46,4 +46,4 @@ The GPU is slightly slower on this small dataset due to overhead from kernel lau
 
 For the large dataset (`data_100k_degrees.txt`), both implementations match in results, counting around 357 million pairs out of the theoretical 5 billion possible pairs within angular bins.
 
-The GPU version is approximately **171x faster**, reducing time from ~1183 seconds (CPU) to ~7 seconds (GPU). This confirms the significant advantage of parallel computing with GPUs for large astronomical data processing.
+The GPU version is ~171 times faster, reducing the time from ~1183 seconds (CPU) to ~7 seconds (GPU). This confirms the significant advantage of parallel computing with GPUs for processing large astronomical datasets.
