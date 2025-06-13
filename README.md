@@ -11,8 +11,9 @@ To address this, the project uses GPU acceleration with CUDA to significantly sp
 
 - `acf_cpu.cpp`: CPU implementation of the ACF calculation  
 - `acf_gpu.cu`: GPU implementation of the ACF calculation using CUDA  
-- `small_data.txt`: Small dataset for testing  
-- `data_100k_degrees.txt`: Large dataset for performance testing  
+- `datasets/` – Folder containing input datasets:  
+  - `small_data.txt` – Small dataset for testing correctness  
+  - `data_100k_degrees.txt` – Large dataset for performance evaluation  
 - `acf_results_cpu.txt`: Sample CPU results  
 - `acf_results_gpu.txt`: Sample GPU results  
 - `Run_Logs/`: Folder containing screenshots and logs from running the code  
