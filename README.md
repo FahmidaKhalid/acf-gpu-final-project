@@ -27,7 +27,7 @@ acf_cpu small_data.txt
 acf_cpu data_100k_degrees.txt
 ```
 
-### GPU Version (Google Colab or Linux with CUDA)
+### GPU Version (Google Colab with CUDA)
 ```bash
 nvcc --std=c++11 acf_gpu.cu -o acf_gpu -arch=sm_75
 ./acf_gpu small_data.txt
