@@ -30,9 +30,9 @@ acf_cpu data_100k_degrees.txt
 
 ### GPU Version (Google Colab with CUDA)
 ```bash
-nvcc --std=c++11 acf_gpu.cu -o acf_gpu -arch=sm_75
-./acf_gpu small_data.txt
-./acf_gpu data_100k_degrees.txt
+!nvcc --std=c++11 acf_gpu.cu -o acf_gpu -arch=sm_75
+!./acf_gpu small_data.txtt
+!./acf_gpu data_100k_degrees.txt
 ```
 | Dataset                 | CPU Time (seconds) | GPU Time (seconds) | Speedup (CPU / GPU)   |
 | ----------------------- | ------------------ | ------------------ | --------------------- |
